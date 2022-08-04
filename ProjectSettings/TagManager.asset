@@ -9,6 +9,7 @@ TagManager:
   - MouseTag
   - CrowdTag
   - PushingStageTag
+  - ColorShiftTag
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Crowd
   - Obstacle
   - Pushing
-  - 
+  - ColorShift
   - 
   - 
   - 
