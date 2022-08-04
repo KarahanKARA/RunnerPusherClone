@@ -16,8 +16,6 @@ namespace Player
 
             if (collision.collider.CompareTag("PushingStageTag"))
             {
-                // bu benim stage collision.collider.gameObject.transform.parent
-                // bu da crowd gameObject
                 StartCoroutine(GameManager.Instance.ApproachThem(gameObject,
                     collision.gameObject.transform.parent.gameObject));
                 Destroy(collision.collider.gameObject);
@@ -28,6 +26,13 @@ namespace Player
                 GameManager.Instance.CanPlayerSwipe = false;
                 GameManager.Instance.CanPlayerMoveForward = false;
                 GameManager.Instance.CanCameraMove = false;
+            }
+
+            if (collision.collider.CompareTag("EndgameTag"))
+            {
+                Destroy(collision.collider.gameObject);
+                GameManager.Instance.IsPlayerOnEndgame = true;
+                GameManager.Instance.CanPlayerSwipe = false;
             }
         }
     }

@@ -10,6 +10,8 @@ TagManager:
   - CrowdTag
   - PushingStageTag
   - ColorShiftTag
+  - EndgameTag
+  - Brick
   layers:
   - Default
   - TransparentFX
@@ -23,8 +25,8 @@ TagManager:
   - Obstacle
   - Pushing
   - ColorShift
-  - 
-  - 
+  - Endgame
+  - Brick
   - 
   - 
   - 

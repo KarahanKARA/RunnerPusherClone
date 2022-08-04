@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using PushingStage;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -12,8 +10,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject mousePrefab;
     [SerializeField] private float crowdApproachSpeed;
 
+    private bool _lockTheFormation = false;
+    public bool LockTheFormation
+    {
+        get { return _lockTheFormation; }
+        set { _lockTheFormation = value; }
+    }
+    private bool _isPlayerOnEndgame = false;
+    public bool IsPlayerOnEndgame
+    {
+        get { return _isPlayerOnEndgame; }
+        set { _isPlayerOnEndgame = value; }
+    }
+    
     private bool _isPushingSystemActive = false;
-
     public bool IsPushingSystemActive
     {
         get { return _isPushingSystemActive; }
