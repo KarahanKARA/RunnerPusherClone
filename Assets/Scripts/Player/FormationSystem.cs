@@ -19,7 +19,7 @@ namespace Player
             int temp = 0;
             foreach (Transform child in mousesParent.transform)
             {
-                var point = pathList[Mathf.Min((temp) * formationVerticalDistance, pathList.Count - 1)]; // speed burda
+                var point = pathList[Mathf.Min((temp) * formationVerticalDistance, pathList.Count - 1)];
                 point.z = targetPos.z - formationVerticalDistance * ((temp + 3) / 3);
                 if (temp % 3 == 2)
                 {

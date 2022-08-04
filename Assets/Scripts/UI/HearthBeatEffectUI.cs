@@ -13,8 +13,9 @@ namespace UI
         private void OnEnable()
         {
             _rectTransform = GetComponent<RectTransform>();
-            _onStartScaleX = _rectTransform.localScale.x;
-            _onStartScaleY = _rectTransform.localScale.y;
+            var localScale = _rectTransform.localScale;
+            _onStartScaleX = localScale.x;
+            _onStartScaleY = localScale.y;
             _scaleX = _onStartScaleX;
             _scaleY = _onStartScaleY;
             StartCoroutine(Shrink());

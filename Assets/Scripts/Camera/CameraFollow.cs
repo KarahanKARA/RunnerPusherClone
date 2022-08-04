@@ -8,7 +8,6 @@ namespace Camera
         [SerializeField] private float speed;
         private Vector3 _offset;
 
-
         void Start()
         {
             _offset = transform.position - target.position;

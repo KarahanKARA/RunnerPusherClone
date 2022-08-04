@@ -2,11 +2,12 @@ using UnityEngine;
 
 namespace Player
 {
-    public class TargetPointController : MonoBehaviour
+    public class CrowdController : MonoBehaviour
     {
         [SerializeField] private float forwardSpeed;
         [SerializeField] private float swipeSpeed;
         [SerializeField] private float mobileSwipeSpeed;
+        [SerializeField] private float mapLimitValue;
         private Rigidbody _rigidbody;
         private bool _isDragging;
         private Vector3 _currentCursorPos;
@@ -58,7 +59,7 @@ namespace Player
                 _oldCursorPos = _currentCursorPos;
             }
 
-            pos.x = Mathf.Clamp(pos.x, -13.5f, 13.5f);
+            pos.x = Mathf.Clamp(pos.x, -mapLimitValue, mapLimitValue);
             _rigidbody.MovePosition(pos);
         }
         private void SwipeMovementMobile()
@@ -71,7 +72,7 @@ namespace Player
                 {
                     var pos = _rigidbody.position;
                     pos.x += _touch.deltaPosition.x * mobileSwipeSpeed*Time.deltaTime;
-                    pos.x = Mathf.Clamp(pos.x, -13.5f, 13.5f);
+                    pos.x = Mathf.Clamp(pos.x, -mapLimitValue, mapLimitValue);
                     _rigidbody.MovePosition(pos);
                 }
             }

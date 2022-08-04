@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4643261020464389402}
   - component: {fileID: 4643261020464389400}
   - component: {fileID: 4643261020464389401}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: MultiplierText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +10
+  m_text: /10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 62f06434d9a24f14bb939746faeee5d4, type: 2}
   m_sharedMaterial: {fileID: -4749186370307199790, guid: 62f06434d9a24f14bb939746faeee5d4, type: 2}
@@ -144,9 +144,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4643261021404914271}
   - component: {fileID: 4643261021404914270}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MathObjectPrefab
-  m_TagString: Untagged
+  m_TagString: MathObjTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 4643261021423023805}
   - component: {fileID: 4643261021423023806}
   - component: {fileID: 4643261021423023807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 4643261022329248943}
   - component: {fileID: 4643261022329248912}
   - component: {fileID: 4643261022329248913}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
