@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4756950993299547666}
   - component: {fileID: 4756950993299547665}
   - component: {fileID: 4756950993299547664}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,35 +100,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!54 &4756950993603724607
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5676079692636940903}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 60
-  m_CollisionDetection: 2
---- !u!65 &4756950993603724592
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5676079692636940903}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.19999999, y: 0.19999999, z: 0.0032}
-  m_Center: {x: 0.000000040978193, y: 0, z: 0}
 --- !u!1 &4756950994035675473
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,9 +110,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4756950994035675474}
   - component: {fileID: 4756950994035675477}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CircularSawObstacle
-  m_TagString: Untagged
+  m_TagString: ObstacleTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,7 +161,7 @@ GameObject:
   - component: {fileID: 4756950994557424437}
   - component: {fileID: 4756950994557424439}
   - component: {fileID: 4756950994557424438}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.5566038, g: 0.31190816, b: 0.31190816, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -254,6 +225,35 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!54 &4756950993603724607
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5676079692636940903}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 60
+  m_CollisionDetection: 2
+--- !u!65 &4756950993603724592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5676079692636940903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19999999, y: 0.19999999, z: 0.0032}
+  m_Center: {x: 0.000000040978193, y: 0, z: 0}
 --- !u!1001 &4756950993414117174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -324,6 +324,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: deda88d1bcd3d2a44a1515efbec38ba5, type: 3}
       propertyPath: m_Name
       value: CircularSaw
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deda88d1bcd3d2a44a1515efbec38ba5, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deda88d1bcd3d2a44a1515efbec38ba5, type: 3}

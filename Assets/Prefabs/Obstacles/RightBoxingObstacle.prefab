@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1742825571359722330}
   - component: {fileID: 1742825571359722332}
   - component: {fileID: 1742825571359722331}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Banner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,9 +144,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1742825572143476374}
   - component: {fileID: 1742825572143476375}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightBoxingObstacle
-  m_TagString: Untagged
+  m_TagString: ObstacleTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 1742825572147163198}
   - component: {fileID: 1742825572147163197}
   - component: {fileID: 1742825572147163196}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 1742825573135242872}
   - component: {fileID: 1742825573135242871}
   - component: {fileID: 1742825573135242870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 1742825573179377790}
   - component: {fileID: 1742825573179377789}
   - component: {fileID: 1742825573179377788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 8404489192636012776}
   - component: {fileID: 1041929418729055997}
   - component: {fileID: 1184925490345924397}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BoxingGlove
   m_TagString: Untagged
   m_Icon: {fileID: 0}

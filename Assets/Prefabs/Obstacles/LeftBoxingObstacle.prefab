@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6780100253334688399}
   - component: {fileID: 6780100253334688384}
   - component: {fileID: 6780100253334688385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 6780100253397620845}
   - component: {fileID: 6780100253397620846}
   - component: {fileID: 6780100253397620847}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 6780100254306888969}
   - component: {fileID: 6780100254306888983}
   - component: {fileID: 6780100254306888968}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Banner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 6780100255197824771}
   - component: {fileID: 6780100255197824769}
   - component: {fileID: 6780100255197824770}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BoxingGlove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,9 +418,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6780100255290803956}
   - component: {fileID: 6780100255290803957}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftBoxingObstacle
-  m_TagString: Untagged
+  m_TagString: ObstacleTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 6780100255328190141}
   - component: {fileID: 6780100255328190142}
   - component: {fileID: 6780100255328190143}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

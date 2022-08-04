@@ -5,7 +5,7 @@ namespace Player
 {
     public class FormationSystem : MonoBehaviour
     {
-        [SerializeField] private GameObject targetObject;
+        public GameObject targetObject;
         [SerializeField] private GameObject mousesParent;
         [SerializeField] private int formationVerticalDistance;
         [SerializeField] private int formationHorizontalDistance;
@@ -20,7 +20,8 @@ namespace Player
             foreach (Transform child in mousesParent.transform)
             {
                 var point = pathList[Mathf.Min((temp) * formationVerticalDistance, pathList.Count - 1)];
-                point.z = targetPos.z - formationVerticalDistance * ((temp + 3) / 3);
+                
+                point.z = targetPos.z - formationVerticalDistance * (((temp + 3) / 3)-1);
                 if (temp % 3 == 2)
                 {
                     point.x -= formationHorizontalDistance;
@@ -29,8 +30,8 @@ namespace Player
                 {
                     point.x += formationHorizontalDistance;
                 }
-
                 Vector3 moveDirection = point - child.transform.position;
+                moveDirection.y = 0;
                 child.position += moveDirection * speed * Time.deltaTime;
                 temp++;
             }

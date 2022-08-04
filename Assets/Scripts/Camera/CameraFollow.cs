@@ -15,8 +15,11 @@ namespace Camera
 
         void LateUpdate()
         {
-            transform.position = Vector3.Lerp(transform.position,
-                new Vector3(target.position.x, 1, target.position.z) + _offset, Time.deltaTime * speed);
+            if (GameManager.Instance.CanCameraMove)
+            {
+                transform.position = Vector3.Lerp(transform.position,
+                    new Vector3(target.position.x, 1, target.position.z) + _offset, Time.deltaTime * speed);
+            }
         }
     }
 }

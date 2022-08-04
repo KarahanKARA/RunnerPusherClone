@@ -5,18 +5,22 @@ TagManager:
   serializedVersion: 2
   tags:
   - MathObjTag
+  - ObstacleTag
+  - MouseTag
+  - CrowdTag
+  - PushingStageTag
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
   - Collectible
-  - 
-  - 
-  - 
-  - 
+  - Mouse
+  - Crowd
+  - Obstacle
+  - Pushing
   - 
   - 
   - 

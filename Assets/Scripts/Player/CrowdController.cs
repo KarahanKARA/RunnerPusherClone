@@ -20,17 +20,28 @@ namespace Player
         }
         void Update()
         {
+            if (GameManager.Instance.CanPlayerSwipe)
+            {
 #if UNITY_64
-            SwipeMovementPC();
+                SwipeMovementPC();
 #endif
 #if UNITY_ANDROID
             SwipeMovementMobile();
 #endif
+            }
+
+            if (GameManager.Instance.CanPlayerMoveForward)
+            {
+                ForwardMovement();
+            }
+        }
+
+        private void ForwardMovement()
+        {
             var pos = _rigidbody.position;
             pos.z += Time.deltaTime * forwardSpeed;
             transform.position = pos;
         }
-        
         private void SwipeMovementPC()
         {
             var pos = _rigidbody.position;
