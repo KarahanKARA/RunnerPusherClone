@@ -65,10 +65,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: /10
+  m_text: /7
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 62f06434d9a24f14bb939746faeee5d4, type: 2}
-  m_sharedMaterial: {fileID: -4749186370307199790, guid: 62f06434d9a24f14bb939746faeee5d4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b76601e8776a18241b7777cf2d93fa21, type: 2}
+  m_sharedMaterial: {fileID: -2564686430097243491, guid: b76601e8776a18241b7777cf2d93fa21, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
