@@ -2257,7 +2257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 20
-  swipeSpeed: 8
+  swipeSpeed: 15
   mobileSwipeSpeed: 5
   mapLimitValue: 12.5
 --- !u!65 &1284397764
