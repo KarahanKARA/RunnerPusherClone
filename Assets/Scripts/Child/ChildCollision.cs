@@ -1,3 +1,4 @@
+using Managers;
 using UnityEngine;
 using Image = UnityEngine.UI.Image;
 
@@ -13,6 +14,7 @@ namespace Child
                 _onCollisionMaterial = new Material(Shader.Find("Standard"));
                 Color color = other.gameObject.GetComponentInChildren<Image>().color;
                 color.a = 255;
+                GameManager.Instance.CurrentColor = color;
                 _onCollisionMaterial.color = color;
                 GetComponentInChildren<SkinnedMeshRenderer>().material = _onCollisionMaterial;
             }
@@ -25,6 +27,11 @@ namespace Child
                 GameManager.Instance.LockTheFormation = true;
                 transform.parent = null;
                 GetComponent<Rigidbody>().isKinematic = true;
+            }
+
+            if (collision.collider.CompareTag("ObstacleTag"))
+            {
+                Destroy(gameObject);
             }
         }
     }

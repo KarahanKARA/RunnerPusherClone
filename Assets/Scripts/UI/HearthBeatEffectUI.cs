@@ -18,8 +18,9 @@ namespace UI
             _onStartScaleY = localScale.y;
             _scaleX = _onStartScaleX;
             _scaleY = _onStartScaleY;
-            StartCoroutine(Shrink());
+            StartCoroutine(Enlarge());
         }
+
         private IEnumerator Shrink()
         {
             yield return new WaitForSeconds(0.1f);
@@ -29,13 +30,14 @@ namespace UI
                 _scaleX -= 0.02f;
                 _scaleY -= 0.02f;
                 _rectTransform.localScale = new Vector2(_scaleX, _scaleY);
-                if (_scaleX <= _onStartScaleX * 0.8f)
+                if (_scaleX <= _onStartScaleX)
                 {
                     StartCoroutine(Enlarge());
                     break;
                 }
             }
         }
+
         private IEnumerator Enlarge()
         {
             yield return new WaitForSeconds(0.1f);
@@ -46,7 +48,7 @@ namespace UI
                 _scaleY += 0.02f;
 
                 _rectTransform.localScale = new Vector2(_scaleX, _scaleY);
-                if (_scaleX >= _onStartScaleX)
+                if (_scaleX >= _onStartScaleX * 1.2f)
                 {
                     StartCoroutine(Shrink());
                     break;

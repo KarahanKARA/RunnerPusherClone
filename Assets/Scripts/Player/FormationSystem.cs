@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Managers;
 using UnityEngine;
 
 namespace Player
@@ -17,6 +18,7 @@ namespace Player
 
         void Update()
         {
+            
             if (!GameManager.Instance.IsPlayerOnEndgame)
             {
                 var targetPos = targetObject.transform.position;
@@ -59,6 +61,7 @@ namespace Player
                             RigidbodyConstraints.FreezeRotationY |
                             RigidbodyConstraints.FreezeRotationZ;
                         var targetPos = transform.position;
+                        targetPos.y = 0;
                         targetPos.y += formationHeightDistance * (((temp + 3) / 3)-1);
                         if (temp % 3 == 2)
                         {

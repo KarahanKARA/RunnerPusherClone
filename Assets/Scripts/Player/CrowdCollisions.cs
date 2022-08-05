@@ -1,3 +1,4 @@
+using Managers;
 using TMPro;
 using UnityEngine;
 
@@ -5,6 +6,8 @@ namespace Player
 {
     public class CrowdCollisions : MonoBehaviour
     {
+        [SerializeField] private GameObject confettiObject;
+
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.collider.CompareTag("MathObjTag"))
@@ -33,6 +36,7 @@ namespace Player
                 Destroy(collision.collider.gameObject);
                 GameManager.Instance.IsPlayerOnEndgame = true;
                 GameManager.Instance.CanPlayerSwipe = false;
+                confettiObject.SetActive(true);
             }
         }
     }

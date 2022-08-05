@@ -1,3 +1,4 @@
+using Managers;
 using UnityEngine;
 
 namespace Player
@@ -28,6 +29,10 @@ namespace Player
 #if UNITY_ANDROID
             SwipeMovementMobile();
 #endif
+            }
+            else
+            {
+                _isDragging = false;
             }
 
             if (GameManager.Instance.CanPlayerMoveForward)
